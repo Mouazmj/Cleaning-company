@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakta Oss - Städtjänster</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Kontakta Oss för Städtjänster</h1>
+        
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="customerEmail">Din email <span class="required">*</span></label>
+                <input type="email" id="customerEmail" name="customerEmail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phoneNumber">Telefonnummer <span class="required">*</span></label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+
+            <div class="form-group">
+                <label>Kundtyp <span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="privat" name="customerType" value="privat" required>
+                        <span>Privatkund</span>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="foretag" name="customerType" value="foretag" required>
+                        <span>Företagskund</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="cleaningService">Vilken städtjänst är du intresserad av? <span class="required">*</span></label>
+                <select id="cleaningService" name="cleaningService" required>
+                    <option value="">Välj en tjänst...</option>
+                    <option value="hemstädning">Hemstädning</option>
+                    <option value="kontorsstädning">Kontorsstädning</option>
+                    <option value="flyttstädning">Flyttstädning</option>
+                    <option value="fönsterputs">Fönsterputs</option>
+                    <option value="storstädning">Storstädning</option>
+                    <option value="byggstädning">Byggstädning</option>
+                    <option value="regelbunden-städning">Regelbunden städning</option>
+                    <option value="engångsstädning">Engångsstädning</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="additionalInfo">Ytterligare information (valfritt)</label>
+                <textarea id="additionalInfo" name="additionalInfo" placeholder="Beskriv dina specifika önskemål eller behov..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Skicka förfrågan</button>
+        </form>
+
+        <div id="message" class="message"></div>
+    </div>
+</body>
+</html>
