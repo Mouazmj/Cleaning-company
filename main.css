@@ -1,3 +1,37 @@
-p {
-    color: red;
+/*Navbar*/
+body {
+    margin: 0px;
+}
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.navbar ul {
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: hsl(0, 0%, 10%);
+}
+#header-title {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: linear-gradient(to right, #26A69A, #80cbc4, #e0f2f1);
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0;
 }
