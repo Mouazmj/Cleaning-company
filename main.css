@@ -347,6 +347,7 @@ textarea {
     }
 }
 
+
 /* Touch device optimizations */
 @media (hover: none) and (pointer: coarse) {
     .radio-option:hover {
@@ -389,3 +390,240 @@ textarea {
 .form-group:nth-child(4) { animation-delay: 0.4s; }
 .form-group:nth-child(5) { animation-delay: 0.5s; }
 .submit-btn { animation: fadeInUp 0.5s ease forwards; animation-delay: 0.6s; }
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    margin-top: 50px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.footerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 30px 20px;
+}
+
+/* Social Icons */
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.socialIcons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #26A69A, #80cbc4);
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(38, 166, 154, 0.3);
+}
+
+.socialIcons a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(38, 166, 154, 0.5);
+    background: linear-gradient(135deg, #1e8e7a, #6bb6b0);
+}
+
+.socialIcons a i {
+    font-size: 1.5em;
+    color: white;
+}
+
+/* Footer Navigation */
+.footerNav {
+    margin-bottom: 30px;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 40px;
+}
+
+.footerNav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footerNav ul li a:hover {
+    background: rgba(38, 166, 154, 0.2);
+    color: #26A69A;
+    transform: translateY(-2px);
+}
+
+/* Footer Bottom */
+.footerBottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+}
+
+.footerBottom p {
+    margin: 0;
+    color: #bdc3c7;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.designer {
+    color: #26A69A;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.designer:hover {
+    color: #80cbc4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footerContainer {
+        padding: 40px 20px 15px;
+    }
+    
+    .socialIcons {
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .socialIcons a {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .socialIcons a i {
+        font-size: 1.3em;
+    }
+    
+    .footerNav ul {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+    
+    .footerNav ul li a {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+    
+    .footerBottom {
+        padding-top: 25px;
+    }
+    
+    .footerBottom p {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerContainer {
+        padding: 30px 15px 15px;
+    }
+    
+    .socialIcons {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+    
+    .socialIcons a {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .socialIcons a i {
+        font-size: 1.2em;
+    }
+    
+    .footerNav ul {
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footerNav ul li a {
+        font-size: 0.9em;
+        padding: 6px 10px;
+    }
+    
+    .footerBottom {
+        padding-top: 20px;
+    }
+    
+    .footerBottom p {
+        font-size: 0.8em;
+        line-height: 1.5;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 320px) {
+    .footerContainer {
+        padding: 25px 10px 10px;
+    }
+    
+    .socialIcons a {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .socialIcons a i {
+        font-size: 1.1em;
+    }
+    
+    .footerNav ul li a {
+        font-size: 0.85em;
+        padding: 5px 8px;
+    }
+    
+    .footerBottom p {
+        font-size: 0.75em;
+    }
+}
+
+/* Animation for footer elements */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.socialIcons {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.footerNav {
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.footerBottom {
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: 0.4s;
+}
